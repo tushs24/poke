@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let type of poketypes" class="col-md-4">
+      <div class="card mb-4 box-shadow">
+        <div class="card text-white">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a routerLink="{{type.name}}">
+                {{type.name | titlecase}}
+              </a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  

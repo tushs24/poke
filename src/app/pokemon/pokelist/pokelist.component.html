@@ -1,0 +1,12 @@
+<cdk-virtual-scroll-viewport itemSize="10" style="height:430px">
+  <div class="container">
+    <div class="list-group">
+      <div *cdkVirtualFor="let pokemon of pokemons"
+        class="list-group-item d-flex justify-content-between align-items-center" style="width:100%;">
+        <a [routerLink]="pokemon.pokemon.name" class="list-group-item list-group-item-action">
+          {{pokemon.pokemon.name | titlecase}}
+        </a>
+      </div>
+    </div>
+  </div>
+</cdk-virtual-scroll-viewport>

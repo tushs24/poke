@@ -1,0 +1,36 @@
+<div *ngIf="pokeInfo  && extraInfo">
+    <div class="container">
+        <div class="card" style="background-color: black;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/{{extraInfo.id | imageId}}.png"
+                        class="card-img" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <table class="table table-hover table-bordered table-dark">
+                            <tbody>
+                                <tr>
+                                    <th>Name</th>
+                                    <td>{{pokeInfo.name | uppercase}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Height</th>
+                                    <td>{{pokeInfo.height}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Weight</th>
+                                    <td>{{pokeInfo.weight}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Base Experience</th>
+                                    <td>{{pokeInfo.base_experience}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
